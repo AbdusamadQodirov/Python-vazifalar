@@ -95,12 +95,16 @@ class Sotuvchi(Shaxs):
         return f"{self.ism} {self.familiya}. Tugilgan yili: {self.tyil}, Sotadigan buyumlari: {self.buyumlar}"
 sotuvchi1 = Sotuvchi("Akmal", "Sharipov", 2005, "oziq-ovqat", "kiyim")
 
-print(sotuvchi1.tyil)
-print(sotuvchi1.passport)
+# print(sotuvchi1.tyil)
+# print(sotuvchi1.passport)
 
-# class Mijoz(Sotuvchi):
-#     def __init__(self, ism, familiya, tyil, passport):
-#         pass
+class Mijoz(Sotuvchi):
+    def __init__(self, ism, familiya, tyil, passport, nimasotishi):
+        super().__init__(ism, familiya, tyil, passport, nimasotishi)
+    def ban_user(self):
+        return "Foydaluvchi bloklandi"
+mijoz1 = Mijoz("Abdusamad", "Qodirov", "2004", 'AD1245624', 'asdfaeg')
+print(mijoz1.ban_user())
 
 
 
