@@ -1,3 +1,3 @@
 # Python-vazifalari
-Men bu reposetoryda python dasturlash tilida ishlagan masalalarim yuklab boraman.
-In this repository I will download the problems that I have worked on in python programming language
+Men bu reposetoryda python dasturlash tilida https://python.sariq.dev/ shu saytda berilgan masalalar uchun yechimlarni yuklayman                                         
+In this repository, I am uploading solutions for problems given on this site https://python.sariq.dev/ in python programming language.
