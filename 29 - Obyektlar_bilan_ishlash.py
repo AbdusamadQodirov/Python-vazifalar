@@ -5,53 +5,6 @@ class Talaba:
             self.birthday = tugilgan_yil
 
 
-        def get_name(self):
-            return self.name
-        def get_new_update(self):
-            return "sorry"
-        def __getnewargs__(self):
-            return 'please remember me'
-        def __getstate__(self):
-            pass
-        def __getinitargs__(self):
-            pass
-        def __getattr__(self, item):
-            pass
-        def __getitem__(self, item):
-            pass
-        def __get__(self, instance, owner):
-            pass
-        def __getattribute__(self, item):
-            pass
-        def __class_getitem__(cls, item):
-            pass
-        def __ge__(self, other):
-            pass
-        def __gt__(self, other):
-            pass
-        def __neg__(self):
-            pass
-        def __long__(self):
-            pass
-        def __missing__(self, key):
-            pass
-        def __call__(self, *args, **kwargs):
-            pass
-        def __new__(cls, *args, **kwargs):
-            pass
-        def __init_subclass__(cls, **kwargs):
-            pass
-        def __hex__(self):
-            pass
-        def __add__(self, other):
-            pass
-        def get_lastname(self):
-            return self.sourname
-        def get_age(self, yil):
-            return f"Talabaning yoshi {yil - self.birthday}"
-        def __anext__(self):
-            pass
-
 # talaba1 = Talaba(2005, "Abdusamad", "Qodirov")
 # print(talaba1.name)
 # print(talaba1.birthday)
