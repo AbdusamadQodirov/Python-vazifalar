@@ -72,8 +72,9 @@ fan = Fan('matematika')
 fan1 = Fan('Ona tili')
 fan3 = Fan('Rus tili')
 fan.add_student(talaba1, talaba2, talaba3)
-print(fan.fan_talabalari)
-print(fan.fan_talabalari[0][0 ])
+print(fan.add_student(talaba2))
+print(fan.nomi)
+
     
         
     
