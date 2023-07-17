@@ -24,15 +24,21 @@ class Talaba:
         return self.__id
     def update_bosqich(self):
         self.bosqich += 1
-    def __lt__(self, bosqich):
-        return self.bosqich < bosqich.bosqich
-    def __eq__(self, bosqich):
-        return self.bosqich == bosqich.bosqich
-    def __le__(self, bosqich):
-        return self.bosqich <= bosqich.bosqich
-talaba1 = Talaba('Hamza', 'Toshpolatov', 2004, 2)
+    # def __lt__(self, bosqich):
+    #     return self.bosqich < bosqich.bosqich
+    # def __eq__(self, bosqich):
+    #     return self.bosqich == bosqich.bosqich
+    # def __le__(self, bosqich):
+    #     return self.bosqich <= bosqich.bosqich
+
+talaba1 = Talaba('Abdusamad', 'Qodirov', 2005, 1)
 talaba2 = Talaba('Sherzod', 'Muhiddinov', 2004, 2)
 talaba3 = Talaba('Nizom', 'Dostmuhammedov', 2005, 1)
+talaba4 = Talaba('Fayoz', 'Xusanov', 2004, 2)
+talaba5 = Talaba('Samandar', 'Yodgorov', 2004, 2)
+talaba6 = Talaba('Abdulaziz', 'Abduraimov', 2004, 2)
+talaba7 = Talaba('Hamza', 'Toshpolatov', 2004, 2)
+
 # print(talaba1 == talaba3)
 # print(talaba1 >= talaba3)
 
@@ -54,26 +60,41 @@ class Fan:
                 print(f"{i} - qo'shilgan obyekt talaba emas")
             i += 1
 
-    def __getitem__(self, index):
-        return self.fan_talabalari[index]
-    
     def __setitem__(self, index, value):
         if isinstance(value, Talaba):
             self.fan_talabalari[index] = value
     def __len__(self):
         return len(self.fan_talabalari)
+    
+    def get_fan_studentlari(self):
+        return [i.ism for i in self.fan_talabalari]
+
 
 
     @classmethod
     def get_fanlar_soni(cls):
         return cls.__fanlar_soni
     
-fan = Fan('matematika')
+    def __add__(self, qiymat):
+        if isinstance (qiymat, Fan):
+            yangi_fan = Fan(f"{self.nomi} {qiymat.nomi}")
+            yangi_fan.fan_talabalari = self.fan_talabalari + qiymat.fan_talabalari
+            return yangi_fan
+
+
 fan1 = Fan('Ona tili')
+fan2 = Fan('matematika')
 fan3 = Fan('Rus tili')
-fan.add_student(talaba1, talaba2, talaba3)
-print(fan.add_student(talaba2))
-print(fan.nomi)
+
+fan2.add_student(talaba1, talaba2, talaba3)
+fan1.add_student(talaba4, talaba5, talaba6, talaba7)
+
+# print(fan.fan_talabalari)
+# print(fan1.get_fan_studentlari())
+
+fan4 = fan1 + fan2
+
+print(fan4.get_fan_studentlari())
 
     
         
