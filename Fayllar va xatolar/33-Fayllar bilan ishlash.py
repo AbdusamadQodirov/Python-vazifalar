@@ -57,18 +57,18 @@
 
                                 # Amaliyot
 
-# matn = "1.Bugun men bu darsda fayllar bilan ishlash haqida o'rgandim.\n Faylni ochish uchun open faylni yopish uchun esa close funksiyasidan foydalaniladi. \n"
-# matn1 = "2.Dasturni ochib yopish uchun esa bu koddan foydalaniladi 'with open('faylnomi.formati') as file: \n print(file.read()) \n"
-# matn2 = "3.Agar with open(faylnomi, 'w') deb yozilsa bu faylni yozish un ochiladi \nAgar with open('wb') deb yozilsa bu fayl ikkilik sanoq sistemasida yoziladi\n"
-# matn3 = "4.Dasturga obyektlarni o'zgaruvchilarni qo'shish uchun pickle kutubxonasini import qilish kerak.\n with open('faylnomi', 'wb') as file: \n pickle.dump(o'zgaruvchi yoki obyektni kiritishimiz kerak boladi, file) "
+matn = "1.Bugun men bu darsda fayllar bilan ishlash haqida o'rgandim.\n Faylni ochish uchun open faylni yopish uchun esa close funksiyasidan foydalaniladi. \n"
+matn1 = "2.Dasturni ochib yopish uchun esa bu koddan foydalaniladi 'with open('faylnomi.formati') as file: \n print(file.read()) \n"
+matn2 = "3.Agar with open(faylnomi, 'w') deb yozilsa bu faylni yozish un ochiladi \nAgar with open('wb') deb yozilsa bu fayl ikkilik sanoq sistemasida yoziladi\n"
+matn3 = "4.Dasturga obyektlarni o'zgaruvchilarni qo'shish uchun pickle kutubxonasini import qilish kerak.\n with open('faylnomi', 'wb') as file: \n pickle.dump(o'zgaruvchi yoki obyektni kiritishimiz kerak boladi, file) "
 
-# with open("Python fayllar bilan ishlash.txt", 'w') as file:
-#     file.write(matn)
-#     file.write(matn1)
-#     file.write(matn2)
-#     file.write(matn3)
-# with open('Python fayllar bilan ishlash.txt') as file:
-#     print(file.read())
+with open("Python fayllar bilan ishlash.txt", 'w') as file:
+    file.write(matn)
+    file.write(matn1)
+    file.write(matn2)
+    file.write(matn3)
+with open('Python fayllar bilan ishlash.txt') as file:
+    print(file.read())
 
 import pickle
 with open('PI.txt') as file:
