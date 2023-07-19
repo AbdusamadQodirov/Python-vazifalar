@@ -96,6 +96,5 @@ fan4 = fan1 + fan2
 
 print(fan4.get_fan_studentlari())
 
-    
-        
-    
+
+
