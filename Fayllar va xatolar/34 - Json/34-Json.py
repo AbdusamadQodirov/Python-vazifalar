@@ -35,29 +35,29 @@ import json
 
 
                                         # Amaliyot
-# data = {"Model" : "Malibu", "Rang" : "Qora", "Yil":2020, "Narh":40000}
-# data_json = json.dumps(data, indent = 3)
-# print(data_json)
+data = {"Model" : "Malibu", "Rang" : "Qora", "Yil":2020, "Narh":40000}
+data_json = json.dumps(data, indent = 3)
+print(data_json)
 
-# talaba_json = """{"ism":"Hasan","familiya":"Husanov","tyil":2000}"""
-# talaba = json.loads(talaba_json)
-# print(talaba['ism'], talaba['familiya'])
+talaba_json = """{"ism":"Hasan","familiya":"Husanov","tyil":2000}"""
+talaba = json.loads(talaba_json)
+print(talaba['ism'], talaba['familiya'])
 
-# with open('Data.json', 'w') as file:
-#     json.dump(data, file)
-# with open('Talaba.json', 'w') as file:
-#     json.dump(talaba, file)
+with open('Data.json', 'w') as file:
+    json.dump(data, file)
+with open('Talaba.json', 'w') as file:
+    json.dump(talaba, file)
 
-# student = {"student": [{"id": "01", "name": "Tom", "lastname": "Price", "year": 4, "faculty": "Engineering"}, 
-#              {"id": "02", "name": "Nick", "lastname": "Thameson", "year": 3, "faculty": "Computer Science"}, 
-#              {"id": "03", "name": "John", "lastname": "Doe", "year": 2, "faculty": "ICT"}]}
+student = {"student": [{"id": "01", "name": "Tom", "lastname": "Price", "year": 4, "faculty": "Engineering"}, 
+             {"id": "02", "name": "Nick", "lastname": "Thameson", "year": 3, "faculty": "Computer Science"}, 
+             {"id": "03", "name": "John", "lastname": "Doe", "year": 2, "faculty": "ICT"}]}
 
 
-# with open('students.json', 'r') as file:
-#     student = json.load(file)
-# print(type(student))
-# for i in range(3):
-#     print(student['student'][i]['name'], student['student'][i]['lastname'], student['student'][i]['year'],'-kurs', student['student'][i]['faculty'], 'talabasi')
+with open('students.json', 'r') as file:
+    student = json.load(file)
+print(type(student))
+for i in range(3):
+    print(student['student'][i]['name'], student['student'][i]['lastname'], student['student'][i]['year'],'-kurs', student['student'][i]['faculty'], 'talabasi')
 
 with open('api-result.json', 'r') as file:
     result = json.load(file)
